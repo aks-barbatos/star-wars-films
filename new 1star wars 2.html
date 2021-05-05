@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<title>prototype (star wars)
+</title>
+<style>
+body {
+      background-image: url('https://t4.ftcdn.net/jpg/03/15/25/45/360_F_315254526_BguE2UPiesByZ4CA7HQoMAASbWeltDIv.jpg')
+      ;}
+h1 { text-align: center;}
+h2 {
+    color: yellow;
+    font-family:Arial;
+    font-size: 200%;
+	text-align: center;
+	  }
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}      
+
+</style>
+</head>
+
+<body>
+<h1><img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Star_Wars_Logo.svg" alt="star wars" width="250" height="100">
+<h2>Star Wars prequel</h2>
+<p>How to create side-by-side images with the CSS float property:</p>
+
+<div class="row">
+  <div class="column">
+    <img src="https://m.media-amazon.com/images/M/MV5BYTRhNjcwNWQtMGJmMi00NmQyLWE2YzItODVmMTdjNWI0ZDA2XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg" alt="episode 1"  style=
+   "width:100%" usemap="#workmap" >
+   <map name="workmap">
+  <area shape="rect" coords="0,0,406,610" alt="Computer"href="https://fmoviesf.co/movie/star-wars-episode-i-the-phantom-menace-1999-028784/">
+  </div>
+  <div class="column">
+    <img src="https://upload.wikimedia.org/wikipedia/en/3/32/Star_Wars_-_Episode_II_Attack_of_the_Clones_%28movie_poster%29.jpg" alt="episode 2" style="width:100%"usemap="#workmap 1">
+    <map name="workmap 1">
+  <area shape="rect" coords="0,0,406,610" alt="Computer"href="https://fmoviesf.co/movie/star-wars-episode-ii-attack-of-the-clones-2002-029095/">
+  </div>
+  <div class="column">
+    <img src="https://i.pinimg.com/originals/be/8c/31/be8c31419d582cecd51a367afdac3cdf.png" alt="episode 3" style="width:100%"usemap="#workmap 2">
+     <map name="workmap 2">
+  <area shape="rect" coords="0,0,406,610" alt="Computer"href="https://fmoviesf.co/movie/star-wars-episode-iii-revenge-of-the-sith-2005-029347/">
+  </div>
+</div>
+</body>
+</html>
